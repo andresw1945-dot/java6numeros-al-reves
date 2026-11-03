@@ -1,0 +1,27 @@
+package javaapplication6;
+
+import java.util.Scanner;
+
+public class JavaApplication6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+ int num;
+ int num2;
+ int aux;
+        
+        System.out.println("ingrese el primer numero"); 
+        num = sc.nextInt();
+        System.out.println("ingrese el segundo numero numero"); 
+        num2 = sc.nextInt();
+        System.out.println("antes");
+        System.out.println("numero uno: "+num);
+        System.out.println("numero dos: "+num2);
+        aux = num2;
+        num2 = num;
+        num = aux;
+        System.out.println("despues");
+        System.out.println("numero uno: "+num);
+        System.out.println("numero dos: "+num2);
+       
+    }
+}
